@@ -1,0 +1,155 @@
+
+:root{
+    --col:#7C766F;
+    --txtSize:60px;
+}
+
+
+nav{
+    width: 90%;
+    height: 60px;
+    background-color: var(--col) ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    margin: auto;
+
+    position: fixed;
+    top: 20px;
+    left: 40px;
+
+    z-index: 5;
+
+}
+
+.x{
+    color: aliceblue;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+
+}
+
+
+.links a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+.logo span{
+    color: aliceblue;
+    font-size: 22px;
+}
+
+.logo img{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.first{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Mountain\ View\ Garden.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first h1{
+    font-size: 80px;
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+
+.first h3{
+    color: aliceblue;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.first a{
+    background-color: aliceblue;
+    color: var(--col);
+    font-size: 25px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+
+    position: relative;
+    left: 150px;
+}
+
+.second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.second1 , .second2{
+    padding: 50px;
+}
+
+.second1 h1{
+    font-size: 40px;
+}
+
+.seocond1 h2{
+    font-size: 15px;
+}
+
+.second2 a{
+    color:var(--col) ;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+
+}
+
+.second2 p{
+    margin-bottom: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contents div{
+    width: 300px;
+}
+
+.contents img{
+    width: 100%;
+    height: 400px;
+}
+
+
+.Test{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+
+    justify-content: space-evenly;
+}
+

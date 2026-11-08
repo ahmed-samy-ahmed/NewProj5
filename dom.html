@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            background-color: blue;
+            color: aliceblue;
+            font-size: 25px;
+            border-radius: 15px;
+            padding: 15px;
+
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            display: none;
+        }
+    </style>
+
+
+    <style>
+        #mo{
+            background-color: blue;
+            color: aliceblue;
+            font-size: 25px;
+            border-radius: 15px;
+            padding: 15px;
+
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <button onclick="newItm()"> Create New </button>
+
+    <div id="newEl" >
+        <h1> Welcome </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas magnam ex eaque eligendi libero cupiditate. Labore suscipit dignissimos officiis eligendi consequatur veniam repellat, excepturi sed, dolorem sint, ab eos.</p>
+    </div>
+
+    <img src="images/Mountain View Garden.avif" width="200" height="200" id="logo" class="gg">
+
+
+
+
+
+    <!-- 
+        onfocus  =>   بيشتغل لما المؤشر يكون داخل العنصر
+        onblur  => بيشتغل لما المؤشر يكون خارج العنصر
+        onmouseover   =>    بيشتغل لما الماوس يكون فوق العنصر
+        onmouseleave   =>   بيشتغل لما الماوس يكون بعيد عن العنصر
+
+        onscroll  =>   بيشتغل لما يحصل تمرير فى الصفحة
+    
+    -->
+ 
+
+    <a href="***" id="mo"> Downlod</a>
+<input type="text" id="zd" onfocus="foucus()" onblur="bluur()">
+
+    <a href="##" id="upLink"> UP </a>
+  
+    <input type="text" id="new" onfocus="focusItm()" onblur="blurItm()" onmouseover="over()" onmouseleave="leave()">
+
+
+
+    
+
+
+
+    <!-- التأكد من شروط كلمة المرور  -->
+    <input type="text" id="pass" oninput="check()">
+    <h1 id="res"></h1>
+
+
+    <br>
+
+    <input type="color" id="choose" onchange="selectBack()">
+    <br>
+
+
+    <input type="text" id="user" oninput="moveTxt()">
+    <h1 id="dist"></h1>
+
+    <!-- تغيير ألوان الصفحة الخلفية والخط -->
+    <button onclick="chngBack('blue' , 'white')"> B </button>
+    <button onclick="chngBack('Green' , 'yellow')"> G </button>
+    <button onclick="chngBack('Red' , 'blue')"> R </button>
+    <button onclick="chngBack('Pink' , 'red')"> P </button>
+
+    <!-- تعديل شكل العنوان والفقرة -->
+    <h1 id="first">Welcome DOM </h1>
+    <p id="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum porro corporis harum impedit numquam deserunt iure laboriosam itaque quibusdam quo. Id repellat fuga sed unde incidunt explicabo reprehenderit modi voluptatibus iste aliquam optio non, exercitationem, sequi ducimus! Quisquam animi quod quo voluptates soluta debitis, eos quasi iure rem deleniti error quos eveniet maxime ratione, repellat at numquam, magni blanditiis. Maxime voluptatem possimus, pariatur laborum molestiae commodi facere? Praesentium blanditiis consectetur sequi maiores in quaerat quod inventore aliquam sapiente doloremque fugiat eius ut excepturi obcaecati totam, quibusdam suscipit tempore quidem? Modi ea mollitia reiciendis et, sed doloremque facere sit rerum fugit earum autem reprehenderit consequatur inventore, placeat minus quo eveniet id nemo! Ratione, laborum? Qui reiciendis aspernatur, necessitatibus corrupti consequatur et modi fugit assumenda laboriosam doloribus quisquam illo odio tempore mollitia voluptatum ratione officiis sequi aperiam repellendus voluptate totam quidem. Laudantium eos magnam nostrum doloribus veniam accusamus perspiciatis nemo id obcaecati animi. Adipisci consequatur esse totam dolore non voluptatem dolorum est voluptate! Voluptatibus delectus beatae cumque magni? Debitis dolores totam aliquam similique, quam voluptates nesciunt voluptatibus quasi omnis necessitatibus aut cum vel numquam facere sit officiis optio molestiae dignissimos ullam. Vel doloribus odio voluptas iste id, molestias vitae maiores incidunt quae?</p>
+    <button onclick="chngStyle()">Change</button>
+
+<br>
+
+    <button onclick="desha('black' , 'red')">tx</button>
+    <button onclick="desha('blue' , 'white')">vc</button>
+    <p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+
+    <p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+
+    <p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+
+    <p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+<p id="nb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum nobis praesentium reiciendis quis aperiam deserunt molestiae harum, facere neque officia iure nam vero accusamus doloremque obcaecati placeat? Quos optio sint officia? Totam dolorum, sit magni corrupti ab blanditiis laboriosam in ducimus qui possimus, voluptas officiis, ut voluptatum. Autem perspiciatis distinctio sunt, consequuntur quasi modi rem voluptatibus nulla, mollitia voluptas, praesentium tempore ad a deserunt? Debitis expedita, explicabo amet, eius, blanditiis dolores cupiditate ratione ipsa nisi maiores molestiae dicta fuga hic repellendus repudiandae officia. Sunt pariatur, delectus assumenda quaerat ut molestiae nesciunt blanditiis amet obcaecati quam voluptates facere, soluta at.</p>
+
+    <script src="js/dom.js"></script>
+</body>
+</html>
